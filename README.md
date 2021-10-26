@@ -8,7 +8,7 @@ A one-click [Ghost](https://ghost.org/) deployment on [Azure Web App for Contain
 
 ## Build 
 
-[![Publish Docker Image](https://github.com/hypeitnow/az_ghost/actions/workflows/push.yml/badge.svg)](https://github.com/hypeitnow/az_ghost/actions/workflows/push.yml)
+[![Publish Docker Image](https://github.com/hypeitnow/az_ghost_test/actions/workflows/push.yml/badge.svg)](https://github.com/hypeitnow/az_ghost/actions/workflows/push.yml)
 
 ## Getting Started
 
@@ -21,11 +21,11 @@ The Azure Web app configuration is provided as a ready-to-use ARM template that 
 * a Log Analytics workspace and Application Insights component for monitoring the application;
 * an Azure Database for MySQL server;
 * an [Azure Front Door](https://docs.microsoft.com/en-us/azure/frontdoor/) endpoint with a [WAF policy](https://docs.microsoft.com/en-us/azure/web-application-firewall/afds/afds-overview) _or_ an [Azure CDN](https://docs.microsoft.com/en-us/azure/cdn/) profile and endpoint for offloading the traffic from the Web app depending on the specified input parameter (deploymentConfiguration).
+* a Web app slot for continuous deployment that has a webhook for the docker image 
 
 All resources have their diagnostic settings configured to stream resource logs and metrics to the Log Analytics workspace.
 
 For the complete list of settings, please refer to the following blog posts:
 
-* [A one-click Ghost deployment on Azure Web App for Containers](https://andrewmatveychuk.com/a-one-click-ghost-deployment-on-azure-web-app-for-containers/)
-* [Ghost deployment on Azure: Security Hardening](https://andrewmatveychuk.com/ghost-deployment-on-azure-security-hardening/)
-* [How to connect to Azure Database for MySQL from Ghost container](https://andrewmatveychuk.com/how-to-connect-to-azure-database-for-mysql-from-ghost-container/)
+* [Poject was based on the following blog: ](https://andrewmatveychuk.com/a-one-click-ghost-deployment-on-azure-web-app-for-containers/)
+
